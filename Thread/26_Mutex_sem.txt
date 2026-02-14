@@ -1,0 +1,17 @@
+1. Binary Semaphore
+
+A binary semaphore is a semaphore that can have only two values: 0 or 1.
+
+-> Used for signaling between threads/processes.
+-> No ownership – any thread can signal (post) it.
+-> Can be used for task synchronization.
+-> May not support priority inheritance (depends on OS).
+
+2. Mutex (Mutual Exclusion Lock)
+
+A mutex is specifically designed for mutual exclusion.
+
+-> Used to protect critical sections.
+-> Ownership exists – only the thread that locks it can unlock it.
+-> Prevents race conditions.
+-> Often supports priority inheritance (to prevent priority inversion).
